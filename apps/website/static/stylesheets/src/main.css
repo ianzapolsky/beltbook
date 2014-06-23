@@ -1,0 +1,10 @@
+
+/* 
+ * 3 containers, to start
+ */
+
+.img-div { width:100%;
+           height:auto;
+           position:absolute; }
+
+.img-div > img { width:100%; }
