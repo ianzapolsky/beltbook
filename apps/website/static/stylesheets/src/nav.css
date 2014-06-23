@@ -2,4 +2,16 @@
  * Custom styles for the Belt Book nav bar
  */
 
+.navbar-default {
+  font-color:       #800000;
+  background-color: #eee;
+  border-color:     #800000;
+  font-family:      monospace;
+}
+
+.navbar > .container .navbar-brand,
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > .active > a {
+  color: #800000;
+}
 
