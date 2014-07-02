@@ -1,0 +1,19 @@
+
+.container {
+  margin: 0 auto;
+
+  .container-text {
+    padding: 50px 200px;
+    h1 { font-size: 30px;
+         padding-bottom: 10px;
+         font-family: sans-serif;
+         font-weight: 400;
+         color: #ccc; }
+    p  { font-size: 20px;
+         font-family: sans-serif;
+         font-weight: 300;
+         line-height: 1.4em;
+         color: #000; }
+  }
+
+}

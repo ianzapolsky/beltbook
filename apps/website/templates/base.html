@@ -8,14 +8,11 @@
     
     <title>{% block page_title %}{% endblock %}</title>
 
-    <link href="{% static 'stylesheets/lib/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'stylesheets/src/main.css' %}" rel="stylesheet">
-    <link href="{% static 'stylesheets/src/nav.css' %}" rel="stylesheet">
+    <link href="{% static 'stylesheets/src/css/main.css' %}" rel="stylesheet">
 
     {% block page_specific_styles %}{% endblock %}
 
     <script src="{% static 'javascripts/lib/jquery-1.11.1.min.js' %}"></script>
-    <script src="{% static 'javascripts/lib/bootstrap.min.js' %}"></script>
 
     {% block page_specific_scripts %}{% endblock %}
 

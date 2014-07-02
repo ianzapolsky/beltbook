@@ -1,0 +1,33 @@
+.nav {
+
+  font-family: monospace;
+  color: #800000;
+
+  .nav-bar {
+    width: 100%;
+    min-height: 80px;
+    margin: 0;
+    background-color: #eee;
+
+    .nav-bar-segment-left,
+    .nav-bar-segment-right {
+      &.active { background-color: #ddd; }
+      h1      { font-size: 30px; }
+      h3      { font-size: 18px; }
+      a       { text-decoration: none; 
+                color: #800000; }
+      a:hover { border-bottom: 2px solid #800000;
+                cursor: pointer; }
+    }
+    .nav-bar-segment-left {
+      padding: 25px;
+      float: left;
+    }
+    .nav-bar-segment-right {
+      padding: 31px;
+      float: right;
+    }
+
+  }
+
+}
