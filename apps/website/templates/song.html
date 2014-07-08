@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block page_title %}{{song.title}}{% endblock %}
+{% block page_specific_styles %}{% endblock %}
+{% block page_specific_scripts %}{% endblock %}
+
+{% block navigation %} 
+  
+  <div class="nav">
+    <div class="nav-bar">
+      <div class="nav-bar-segment-left">
+        <h1><a href="/">The Belt Book</a></h1>
+      </div>
+      <div class="nav-bar-segment-right">
+        <h3><a href="">blog</a></h3>
+      </div>
+      <div class="nav-bar-segment-right">
+        <h3><a href="/contact">contact</a></h3>
+      </div>
+      <div class="nav-bar-segment-right active">
+        <h3><a href="/about">about</a></h3>
+      </div>
+      <div class="nav-bar-collapse-button"></div>
+    </div>
+  </div>
+
+  <div class="collapse-menu">
+    <div class="collapse-row">
+      <div class="collapse-row-item">
+        <h3><a href="/about">about</a></h3>
+      </div>
+    </div>
+    <div class="collapse-row">
+      <div class="collapse-row-item">
+        <h3><a href="/contact">contact</a></h3>
+      </div>
+    </div>
+    <div class="collapse-row">
+      <div class="collapse-row-item">
+        <h3><a href="">blog</a></h3>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block page_content %}
+
+  <div class="container">
+    <div class="container-inner">
+
+      <div class="container-card">
+        <!-- card -->
+        <div class="flipper" ontouchstart="this.classList.toggle('flipped');">
+
+          <!-- front content -->
+          <div class="front">
+            <div class="content">
+              <h3 class="header">title:</h3>
+              <h3 class="header">composer:</h3>
+              <h3 class="header">year:</h3>
+              <h3 class="header">name in show:</h3>
+              <h3 class="header">original artist:</h3>
+              <h3 class="header">low note:</h3>
+              <h3 class="header">hight note:</h3>
+              <h3 class="header">song style:</h3>
+              <h3 class="header">tempo:</h3>
+              <h3 class="header">tessitura:</h3>
+              <h3 class="header">character type:</h3>
+            </div>
+            <div class="button-flip"></div>
+          </div>
+
+          <!-- back content -->
+          <div class="back">
+            <div class="content">
+              <h1 class="header">
+                Tips on the back
+              </h1>
+            </div>
+            <div class="button-flip"></div>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+{% endblock %}
+

@@ -63,6 +63,133 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* line 2, ../sass/_site.scss */
+.container {
+  margin: 80px auto;
+}
+/* line 5, ../sass/_site.scss */
+.container .container-inner {
+  padding: 50px 200px;
+  max-height: 300px;
+  background-color: #800000;
+}
+@media (max-width: 1000px) {
+  /* line 5, ../sass/_site.scss */
+  .container .container-inner {
+    padding: 50px 100px;
+  }
+}
+@media (max-width: 700px) {
+  /* line 5, ../sass/_site.scss */
+  .container .container-inner {
+    padding: 50px 50px;
+  }
+}
+@media (max-width: 400px) {
+  /* line 5, ../sass/_site.scss */
+  .container .container-inner {
+    padding: 50px 25px;
+  }
+}
+/* line 18, ../sass/_site.scss */
+.container .container-inner h1 {
+  font-size: 30px;
+}
+/* line 19, ../sass/_site.scss */
+.container .container-inner h2 {
+  font-size: 25px;
+}
+/* line 20, ../sass/_site.scss */
+.container .container-inner h3 {
+  font-size: 20px;
+}
+/* line 21, ../sass/_site.scss */
+.container .container-inner h4 {
+  font-size: 15px;
+}
+/* line 22, ../sass/_site.scss */
+.container .container-inner h5 {
+  font-size: 10px;
+}
+/* line 23, ../sass/_site.scss */
+.container .container-inner h6 {
+  font-size: 5px;
+}
+/* line 25, ../sass/_site.scss */
+.container .container-inner .header {
+  padding-bottom: 10px;
+  font-family: sans-serif;
+  font-weight: 200;
+  color: #000;
+}
+/* line 32, ../sass/_site.scss */
+.container .container-inner .text {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 300;
+  line-height: 1.4em;
+  color: #000;
+}
+/* line 41, ../sass/_site.scss */
+.container .container-card {
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+  perspective: 1000px;
+}
+/* line 48, ../sass/_site.scss */
+.container .button-flip {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+}
+/* line 56, ../sass/_site.scss */
+.container .flipper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition-duration: 0.8s;
+  -webkit-transition-property: ease-in;
+}
+/* line 66, ../sass/_site.scss */
+.container .flipper .front,
+.container .flipper .back {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+}
+/* line 74, ../sass/_site.scss */
+.container .content {
+  padding: 20px;
+  text-align: left;
+}
+/* line 79, ../sass/_site.scss */
+.container .flipper .front {
+  background: #ddd;
+}
+/* line 81, ../sass/_site.scss */
+.container .flipper .front .button-flip {
+  background-color: #aaa;
+}
+/* line 85, ../sass/_site.scss */
+.container .flipper .back {
+  background: #aaa;
+  -webkit-transform: rotateY(180deg);
+}
+/* line 88, ../sass/_site.scss */
+.container .flipper .back .button-flip {
+  background-color: #ddd;
+}
+/* line 92, ../sass/_site.scss */
+.container .flipper.flipped {
+  -webkit-transform: rotateY(180deg);
+}
+
 /* line 1, ../sass/_nav.scss */
 .nav {
   font-family: monospace;
@@ -73,67 +200,135 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 100%;
   min-height: 80px;
   margin: 0;
-  background-color: #eee;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
 }
 /* line 14, ../sass/_nav.scss */
-.nav .nav-bar .nav-bar-segment-left.active,
-.nav .nav-bar .nav-bar-segment-right.active {
+.nav .nav-bar .nav-bar-segment-left,
+.nav .nav-bar .nav-bar-segment-right {
+  -webkit-transition: 0.2s ease-in;
+}
+/* line 17, ../sass/_nav.scss */
+.nav .nav-bar .nav-bar-segment-left.active, .nav .nav-bar .nav-bar-segment-left:hover,
+.nav .nav-bar .nav-bar-segment-right.active,
+.nav .nav-bar .nav-bar-segment-right:hover {
+  -webkit-box-shadow: 0px 2px 5px #800000;
   background-color: #ddd;
 }
-/* line 15, ../sass/_nav.scss */
+/* line 21, ../sass/_nav.scss */
 .nav .nav-bar .nav-bar-segment-left h1,
 .nav .nav-bar .nav-bar-segment-right h1 {
-  font-size: 30px;
+  font-size: 25px;
 }
-/* line 16, ../sass/_nav.scss */
+/* line 22, ../sass/_nav.scss */
 .nav .nav-bar .nav-bar-segment-left h3,
 .nav .nav-bar .nav-bar-segment-right h3 {
   font-size: 18px;
 }
-/* line 17, ../sass/_nav.scss */
+/* line 23, ../sass/_nav.scss */
 .nav .nav-bar .nav-bar-segment-left a,
 .nav .nav-bar .nav-bar-segment-right a {
   text-decoration: none;
   color: #800000;
 }
-/* line 19, ../sass/_nav.scss */
+/* line 26, ../sass/_nav.scss */
 .nav .nav-bar .nav-bar-segment-left a:hover,
 .nav .nav-bar .nav-bar-segment-right a:hover {
   border-bottom: 2px solid #800000;
   cursor: pointer;
 }
-/* line 22, ../sass/_nav.scss */
+/* line 33, ../sass/_nav.scss */
 .nav .nav-bar .nav-bar-segment-left {
-  padding: 25px;
+  padding: 27.5px 30px;
   float: left;
 }
-/* line 26, ../sass/_nav.scss */
+@media (max-width: 400px) {
+  /* line 33, ../sass/_nav.scss */
+  .nav .nav-bar .nav-bar-segment-left {
+    padding: 27.5px 10px;
+  }
+}
+/* line 41, ../sass/_nav.scss */
 .nav .nav-bar .nav-bar-segment-right {
   padding: 31px;
   float: right;
 }
+@media (max-width: 700px) {
+  /* line 41, ../sass/_nav.scss */
+  .nav .nav-bar .nav-bar-segment-right {
+    padding: 31px 15px;
+  }
+}
+@media (max-width: 600px) {
+  /* line 41, ../sass/_nav.scss */
+  .nav .nav-bar .nav-bar-segment-right {
+    display: none;
+  }
+}
+/* line 53, ../sass/_nav.scss */
+.nav .nav-bar .nav-bar-collapse-button {
+  height: 50px;
+  width: 50px;
+  background-color: #ddd;
+  margin: 15px;
+  float: right;
+  display: none;
+  -webkit-transition: 0.2s ease-in;
+}
+/* line 62, ../sass/_nav.scss */
+.nav .nav-bar .nav-bar-collapse-button:hover {
+  background-color: #ccc;
+}
+@media (max-width: 600px) {
+  /* line 53, ../sass/_nav.scss */
+  .nav .nav-bar .nav-bar-collapse-button {
+    display: inline-block;
+  }
+}
 
-/* line 2, ../sass/_about.scss */
-.container {
-  margin: 0 auto;
+/* line 73, ../sass/_nav.scss */
+.collapse-menu {
+  width: 100%;
+  margin-top: 0;
+  display: none;
 }
-/* line 5, ../sass/_about.scss */
-.container .container-text {
-  padding: 50px 200px;
+/* line 78, ../sass/_nav.scss */
+.collapse-menu.active {
+  display: block;
 }
-/* line 7, ../sass/_about.scss */
-.container .container-text h1 {
-  font-size: 30px;
-  padding-bottom: 10px;
-  font-family: sans-serif;
-  font-weight: 400;
-  color: #ccc;
+/* line 82, ../sass/_nav.scss */
+.collapse-menu .collapse-row {
+  padding: 10px 0px;
+  width: 100%;
+  background-color: #eee;
+  height: 20px;
+  border-top: 1px solid #800000;
+  -webkit-transition: 0.2s ease-in;
 }
-/* line 12, ../sass/_about.scss */
-.container .container-text p {
-  font-size: 20px;
-  font-family: sans-serif;
-  font-weight: 300;
-  line-height: 1.4em;
-  color: #000;
+/* line 90, ../sass/_nav.scss */
+.collapse-menu .collapse-row:last-of-type {
+  border-bottom: 1px solid #800000;
+}
+/* line 94, ../sass/_nav.scss */
+.collapse-menu .collapse-row:hover {
+  background-color: #ccc;
+}
+/* line 98, ../sass/_nav.scss */
+.collapse-menu .collapse-row .collapse-row-item {
+  font-family: monospace;
+  text-align: center;
+}
+/* line 101, ../sass/_nav.scss */
+.collapse-menu .collapse-row .collapse-row-item h3 {
+  font-size: 18px;
+}
+/* line 102, ../sass/_nav.scss */
+.collapse-menu .collapse-row .collapse-row-item a {
+  text-decoration: none;
+  color: #800000;
+}
+/* line 105, ../sass/_nav.scss */
+.collapse-menu .collapse-row .collapse-row-item a:hover {
+  border-bottom: 2px solid #800000;
+  cursor: pointer;
 }

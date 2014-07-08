@@ -1,7 +1,7 @@
-{% include "base.html" %}
+{% extends "base.html" %}
 {% load staticfiles %}
 
-{% block page_title %}{% endblock %}
+{% block page_title %}about{% endblock %}
 {% block page_specific_styles %}{% endblock %}
 {% block page_specific_scripts %}{% endblock %}
 
@@ -13,7 +13,7 @@
         <h1><a href="/">The Belt Book</a></h1>
       </div>
       <div class="nav-bar-segment-right">
-        <h3><a>blog</a></h3>
+        <h3><a href="">blog</a></h3>
       </div>
       <div class="nav-bar-segment-right">
         <h3><a href="/contact">contact</a></h3>
@@ -21,10 +21,31 @@
       <div class="nav-bar-segment-right active">
         <h3><a href="/about">about</a></h3>
       </div>
+      <div class="nav-bar-collapse-button"></div>
+    </div>
+  </div>
+
+  <div class="collapse-menu">
+    <div class="collapse-row">
+      <div class="collapse-row-item">
+        <h3><a href="/about">about</a></h3>
+      </div>
+    </div>
+    <div class="collapse-row">
+      <div class="collapse-row-item">
+        <h3><a href="/contact">contact</a></h3>
+      </div>
+    </div>
+    <div class="collapse-row">
+      <div class="collapse-row-item">
+        <h3><a href="">blog</a></h3>
+      </div>
     </div>
   </div>
 
 {% endblock %}
+
+{% block page_content %}
 
   <div class="container">
     <div class="container-text">
@@ -35,6 +56,6 @@
     </div>
   </div>
 
-{% block page_content %}{% endblock %}
+{% endblock %}
 
 

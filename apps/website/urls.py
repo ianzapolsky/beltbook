@@ -15,5 +15,6 @@ urlpatterns = patterns('',
     # Songs
     #
     url(r'songs$', 'songs.views.get_all'),
+    url(r'songs/(?P<song_id>\d+)$', 'website.views.song'),
 
 )
