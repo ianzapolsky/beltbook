@@ -1,0 +1,40 @@
+/**
+ * Custom styles for the belt book nav bar
+ */
+
+.navbar-custom {
+  background-color: #ffffff;
+  border: 0px solid #ffffff;
+  margin: 40px;
+
+  @media all and (max-width: 450px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+    &:hover {
+      color: #800000;
+    }
+  }
+
+  .navbar-brand {
+    font-family: $serifFont;
+    font-size: 40px;
+    @media all and (max-width: 350px) {
+      font-size: 35px;
+    }
+  }
+
+  .navbar-nav {
+    font-family: $sansSerifFont;
+    font-size: 30px;
+  }
+  
+  .navbar-toggle {
+    background-color: #ddd;
+  }
+}
+

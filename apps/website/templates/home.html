@@ -1,54 +1,23 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 
-{% block page_title %}home{% endblock %}
+{% block page_title %}contact{% endblock %}
 {% block page_specific_styles %}{% endblock %}
 {% block page_specific_scripts %}{% endblock %}
 
-{% block navigation %}
-  
-  <div class="nav">
-    <div class="nav-bar">
-      <div class="nav-bar-segment-left active">
-        <h1><a href="/">The Belt Book</a></h1>
-      </div>
-      <div class="nav-bar-segment-right">
-        <h3><a href="">blog</a></h3>
-      </div>
-      <div class="nav-bar-segment-right">
-        <h3><a href="/contact">contact</a></h3>
-      </div>
-      <div class="nav-bar-segment-right">
-        <h3><a href="/about">about</a></h3>
-      </div>
-      <div class="nav-bar-collapse-button"></div>
-    </div>
-  </div>
-
-  <div class="collapse-menu">
-    <div class="collapse-row">
-      <div class="collapse-row-item">
-        <h3><a href="/about">about</a></h3>
-      </div>
-    </div>
-    <div class="collapse-row">
-      <div class="collapse-row-item">
-        <h3><a href="/contact">contact</a></h3>
-      </div>
-    </div>
-    <div class="collapse-row">
-      <div class="collapse-row-item">
-        <h3><a href="">blog</a></h3>
-      </div>
-    </div>
-  </div>
-  
-{% endblock %}
-
 {% block page_content %}
 
-  <div class="container">
-    
+  <div class="jumbotron jumbotron-custom">
+    <h1 class="jumbo">1. </h1><h1> Select attributes to search by...</h1>
+  </div>
+
+  <div class="jumbotron jumbotron-custom">
+    <h1 class="jumbo">2. </h1>
+    <button class="jumbo-button"><h1>Find the music!</h1></button>
+  </div>
+
+
+  <div class="container container-custom">
   </div>
 
 {% endblock %}
