@@ -4,22 +4,13 @@
   font-family: "Raleway", sans-serif;
   font-size: 30px;
   padding: 30px;
+  border-radius: 2px;
   background-color: #eee;
   -webkit-transition: all 500ms;
 }
-/* line 7, ../scss/_form.scss */
+/* line 8, ../scss/_form.scss */
 .form-custom:hover {
   background-color: rgba(128, 0, 0, 0.75);
-}
-/* line 11, ../scss/_form.scss */
-.form-custom select {
-  height: 45px;
-  font-size: 20px;
-}
-/* line 16, ../scss/_form.scss */
-.form-custom input[type=text] {
-  height: 45px;
-  font-size: 20px;
 }
 
 /**
@@ -59,43 +50,39 @@
 }
 /* line 12, ../scss/_jumbotron.scss */
 .jumbotron-custom h1 {
+  color: #000;
   font-size: 45px;
 }
-/* line 15, ../scss/_jumbotron.scss */
+/* line 16, ../scss/_jumbotron.scss */
 .jumbotron-custom .jumbo-button {
   display: inline;
   background-color: #eee;
   padding: 30px 30px 25px 30px;
-  box-shadow: 5px 5px 3px #800000;
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 2px;
   outline: none;
+  -webkit-transition: all 500ms;
 }
-/* line 23, ../scss/_jumbotron.scss */
-.jumbotron-custom .jumbo-button:active {
-  box-shadow: none;
-  -webkit-transition: all 80ms;
-  -webkit-transform: translate3d(5px, 5px, 0px);
-}
-/* line 28, ../scss/_jumbotron.scss */
+/* line 27, ../scss/_jumbotron.scss */
 .jumbotron-custom .jumbo-button h1 {
   font-size: 45px;
 }
 @media all and (max-width: 600px) {
-  /* line 28, ../scss/_jumbotron.scss */
+  /* line 27, ../scss/_jumbotron.scss */
   .jumbotron-custom .jumbo-button h1 {
     font-size: 30px;
   }
 }
 @media all and (max-width: 450px) {
-  /* line 28, ../scss/_jumbotron.scss */
+  /* line 27, ../scss/_jumbotron.scss */
   .jumbotron-custom .jumbo-button h1 {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
-/* line 38, ../scss/_jumbotron.scss */
-.jumbotron-custom .red {
-  color: #800000;
+
+/* line 39, ../scss/_jumbotron.scss */
+.header .jumbotron-custom {
+  background-color: rgba(128, 0, 0, 0.8);
 }
 
 /**

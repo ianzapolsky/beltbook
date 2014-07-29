@@ -7,6 +7,14 @@
 
 {% block page_content %}
 
+  <div class="container container-custom header">
+    <div class="jumbotron jumbotron-custom">
+      <h1>Welcome to the Belt Book</h1>
+      <p>a free resource for teachers and students to find the musical theater repertoire that's right for them</p>
+    </div>
+  </div>
+
+
   <div class="jumbotron jumbotron-custom">
     <h1> Select attributes to search by...</h1>
   </div>
@@ -17,8 +25,9 @@
 
       <div class="col-md-4">
         <div class="form-group form-custom">
-          <label for="tempo">Tempo</label>
+          <label>Tempo</label>
           <select class="form-control" id="tempo">
+            <option value="">- - - -</option>
             <option value="Ballad">Ballad</option>
             <option value="Power Ballad">Power Ballad</option>
             <option value="Mid-Tempo">Mid-Tempo</option>
@@ -29,8 +38,9 @@
 
       <div class="col-md-4">
         <div class="form-group form-custom">
-          <label for="tempo">Tessitura</label>
+          <label>Tessitura</label>
           <select class="form-control" id="tempo">
+            <option value="">- - - -</option>
             <option value="Low">Low</option>
             <option value="Middle">Middle</option>
             <option value="High">High</option>
@@ -40,20 +50,35 @@
 
       <div class="col-md-4">
         <div class="form-group form-custom">
-          <label for="tempo">Song Style</label>
+          <label>Song Style</label>
           <select class="form-control" id="tempo">
+            <option value="">- - - -</option>
             <option value="Belt">Belt</option>
             <option value="Belt Mix">Belt Mix</option>
           </select>
         </div>
       </div>
-    </div>
+
+    </div><!-- end row 1 -->
 
     <div class="row row-custom">
+
       <div class="col-md-4">
         <div class="form-group form-custom">
-          <label for="tempo">Character Type</label>
+          <label>Gender</label>
           <select class="form-control" id="tempo">
+            <option value="">- - - -</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-custom">
+        <div class="form-group form-custom">
+          <label>Character Type</label>
+          <select class="form-control" id="tempo">
+            <option value="">- - - -</option>
             <option value="Youth">Youth</option>
             <option value="Ingenue">Ingenue</option>
             <option value="Young Lead">Young Lead</option>
@@ -66,24 +91,24 @@
       </div>
 
       <div class="col-md-4">
-        <form role="form">
-          <div class="form-group form-custom">
-            <label for="year">Song Style</label>
-            <input class="form-control" type="text" id="year" placeholder="X X X X">
-          </div>
-        </form>
+        <div class="form-group form-custom">
+          <label>Year</label>
+          <select class="form-control" id="tempo">
+            <option value="">- - - -</option>
+            <option value="Pre-1965">Pre-1965</option>
+            <option value="Post-1965">Post-1965</option>
+          </select>
+        </div>
       </div>
 
-      <div class="col-md-4">
-        <p>Hi there!</p>
-      </div>
-    </div>
-
-  </div>
+    </div><!-- end row 2 -->
 
   <div class="jumbotron jumbotron-custom">
-    <button class="jumbo-button"><h1>Find the music!</h1></button>
+    <button class="jumbo-button">
+      <h1>Find the music</h1>
+    </button>
   </div>
+
 
 
 {% endblock %}

@@ -2,20 +2,10 @@
   font-family: $sansSerifFont;
   font-size: 30px;
   padding: 30px;
+  border-radius: 2px;
   background-color: #eee;
   -webkit-transition: all 500ms;
   &:hover {
     background-color: rgba(128,0,0,0.75);
   }
-
-  select {
-    height: 45px;
-    font-size: 20px;
-  }
-
-  input[type=text] {
-    height: 45px;
-    font-size: 20px;
-  }
-
 }

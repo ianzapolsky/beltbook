@@ -10,20 +10,19 @@
     font-family: $serifFont;
   }
   h1 {
+    color: #000;
     font-size: 45px;
   }
   .jumbo-button {
     display: inline;
     background-color: #eee;
     padding: 30px 30px 25px 30px;
-    box-shadow: 5px 5px 3px #800000;
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 2px;
     outline: none;
+    -webkit-transition: all 500ms;
     &:active {
-      box-shadow: none;
-      -webkit-transition: all 80ms;
-      -webkit-transform: translate3d(5px, 5px, 0px);
+     
     }
     h1 {
       font-size: 45px;
@@ -31,11 +30,15 @@
         font-size: 30px;
       }
       @media all and (max-width: 450px) {
-        font-size: 20px;
+        font-size: 25px;
       }
     }
   }
-  .red {
-    color: #800000;
+}
+
+.header .jumbotron-custom {
+  background-color: rgba(128,0,0,0.8);
+  &:hover {
+     
   }
 }
