@@ -12,6 +12,14 @@
 .form-custom:hover {
   background-color: rgba(128, 0, 0, 0.75);
 }
+/* line 9, ../scss/_form.scss */
+.form-custom:hover label {
+  -webkit-transform: scale(1.1);
+}
+/* line 15, ../scss/_form.scss */
+.form-custom label {
+  -webkit-transition: all 500ms;
+}
 
 /**
  * Custom styles for the belt book containers

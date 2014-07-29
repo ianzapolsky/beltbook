@@ -6,6 +6,13 @@
   background-color: #eee;
   -webkit-transition: all 500ms;
   &:hover {
+    label {
+      -webkit-transform: scale(1.1);
+    }
     background-color: rgba(128,0,0,0.75);
+  }
+
+  label {
+    -webkit-transition: all 500ms;
   }
 }
