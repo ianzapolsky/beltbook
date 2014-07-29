@@ -8,17 +8,84 @@
 {% block page_content %}
 
   <div class="jumbotron jumbotron-custom">
-    <h1 class="jumbo">1. </h1><h1> Select attributes to search by...</h1>
+    <h1> Select attributes to search by...</h1>
+  </div>
+
+  <div class="container container-custom">
+
+    <div class="row row-custom">
+
+      <div class="col-md-4">
+        <div class="form-group form-custom">
+          <label for="tempo">Tempo</label>
+          <select class="form-control" id="tempo">
+            <option value="Ballad">Ballad</option>
+            <option value="Power Ballad">Power Ballad</option>
+            <option value="Mid-Tempo">Mid-Tempo</option>
+            <option value="Up-Tempo">Up-Tempo</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="form-group form-custom">
+          <label for="tempo">Tessitura</label>
+          <select class="form-control" id="tempo">
+            <option value="Low">Low</option>
+            <option value="Middle">Middle</option>
+            <option value="High">High</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="form-group form-custom">
+          <label for="tempo">Song Style</label>
+          <select class="form-control" id="tempo">
+            <option value="Belt">Belt</option>
+            <option value="Belt Mix">Belt Mix</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-custom">
+      <div class="col-md-4">
+        <div class="form-group form-custom">
+          <label for="tempo">Character Type</label>
+          <select class="form-control" id="tempo">
+            <option value="Youth">Youth</option>
+            <option value="Ingenue">Ingenue</option>
+            <option value="Young Lead">Young Lead</option>
+            <option value="Comic">Comic</option>
+            <option value="Lead">Lead</option>
+            <option value="2nd Banana">2nd Banana</option>
+            <option value="Character">Character</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <form role="form">
+          <div class="form-group form-custom">
+            <label for="year">Song Style</label>
+            <input class="form-control" type="text" id="year" placeholder="X X X X">
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-4">
+        <p>Hi there!</p>
+      </div>
+    </div>
+
   </div>
 
   <div class="jumbotron jumbotron-custom">
-    <h1 class="jumbo">2. </h1>
     <button class="jumbo-button"><h1>Find the music!</h1></button>
   </div>
 
 
-  <div class="container container-custom">
-  </div>
-
 {% endblock %}
+
 

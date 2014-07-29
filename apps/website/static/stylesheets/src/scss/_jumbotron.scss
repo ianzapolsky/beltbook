@@ -4,21 +4,17 @@
 
 .jumbotron-custom {
   padding-left: 40px;
+  text-align: center;
   background-color: #ffffff;
   h1,h2,h3,h4,h5,h6 {
-    display: inline;
     font-family: $serifFont;
   }
   h1 {
     font-size: 45px;
   }
-  .jumbo {
-    font-size: 60px;
-  }
   .jumbo-button {
     display: inline;
     background-color: #eee;
-    margin-left: 30px;
     padding: 30px 30px 25px 30px;
     box-shadow: 5px 5px 3px #800000;
     border: 1px solid #ddd;
