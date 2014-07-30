@@ -2,17 +2,29 @@
   font-family: $sansSerifFont;
   font-size: 30px;
   padding: 30px;
-  border-radius: 2px;
+  border-radius: 5px;
   background-color: #eee;
   -webkit-transition: all 500ms;
   &:hover {
     label {
       -webkit-transform: scale(1.1);
+      color: #fff;
     }
     background-color: rgba(128,0,0,0.75);
   }
 
   label {
     -webkit-transition: all 500ms;
+  }
+
+  .info {
+    font-family: $serifFont;
+    font-size: 20px;
+    position: absolute;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    bottom: 25px;
+    right: 20px;
   }
 }

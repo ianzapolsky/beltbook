@@ -4,7 +4,7 @@
   font-family: "Raleway", sans-serif;
   font-size: 30px;
   padding: 30px;
-  border-radius: 2px;
+  border-radius: 5px;
   background-color: #eee;
   -webkit-transition: all 500ms;
 }
@@ -15,10 +15,22 @@
 /* line 9, ../scss/_form.scss */
 .form-custom:hover label {
   -webkit-transform: scale(1.1);
+  color: #fff;
 }
-/* line 15, ../scss/_form.scss */
+/* line 16, ../scss/_form.scss */
 .form-custom label {
   -webkit-transition: all 500ms;
+}
+/* line 20, ../scss/_form.scss */
+.form-custom .info {
+  font-family: "Lusitana", serif;
+  font-size: 20px;
+  position: absolute;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  bottom: 25px;
+  right: 20px;
 }
 
 /**
@@ -62,6 +74,10 @@
   font-size: 45px;
 }
 /* line 16, ../scss/_jumbotron.scss */
+.jumbotron-custom a {
+  color: #fff;
+}
+/* line 19, ../scss/_jumbotron.scss */
 .jumbotron-custom .jumbo-button {
   display: inline;
   background-color: #eee;
@@ -71,26 +87,26 @@
   outline: none;
   -webkit-transition: all 500ms;
 }
-/* line 27, ../scss/_jumbotron.scss */
+/* line 30, ../scss/_jumbotron.scss */
 .jumbotron-custom .jumbo-button h1 {
   font-size: 45px;
 }
 @media all and (max-width: 600px) {
-  /* line 27, ../scss/_jumbotron.scss */
+  /* line 30, ../scss/_jumbotron.scss */
   .jumbotron-custom .jumbo-button h1 {
     font-size: 30px;
   }
 }
 @media all and (max-width: 450px) {
-  /* line 27, ../scss/_jumbotron.scss */
+  /* line 30, ../scss/_jumbotron.scss */
   .jumbotron-custom .jumbo-button h1 {
     font-size: 25px;
   }
 }
 
-/* line 39, ../scss/_jumbotron.scss */
+/* line 42, ../scss/_jumbotron.scss */
 .header .jumbotron-custom {
-  background-color: rgba(128, 0, 0, 0.8);
+  background-color: rgba(128, 0, 0, 0.75);
 }
 
 /**

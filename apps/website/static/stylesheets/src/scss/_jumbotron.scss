@@ -13,6 +13,9 @@
     color: #000;
     font-size: 45px;
   }
+  a {
+    color: #fff;
+  }
   .jumbo-button {
     display: inline;
     background-color: #eee;
@@ -37,8 +40,5 @@
 }
 
 .header .jumbotron-custom {
-  background-color: rgba(128,0,0,0.8);
-  &:hover {
-     
-  }
+  background-color: rgba(128,0,0,0.75);
 }
