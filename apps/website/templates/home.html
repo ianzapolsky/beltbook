@@ -3,7 +3,9 @@
 
 {% block page_title %}contact{% endblock %}
 {% block page_specific_styles %}{% endblock %}
-{% block page_specific_scripts %}{% endblock %}
+{% block page_specific_scripts %}
+  <script src="{% static 'javascripts/src/search.js' %}"></script>
+{% endblock %}
 
 {% block page_content %}
 
@@ -52,7 +54,7 @@
       <div class="col-md-4">
         <div class="form-group form-custom">
           <label>Song Style</label>
-          <select class="form-control" id="song_style">
+          <select class="form-control" id="songStyle">
             <option value="">- - - -</option>
             <option value="Belt">Belt</option>
             <option value="Belt Mix">Belt Mix</option>
@@ -78,7 +80,7 @@
       <div class="col-md-4 col-custom">
         <div class="form-group form-custom">
           <label>Character Type</label>
-          <select class="form-control" id="character_type">
+          <select class="form-control" id="characterType">
             <option value="">- - - -</option>
             <option value="Youth">Youth</option>
             <option value="Ingenue">Ingenue</option>
@@ -94,7 +96,7 @@
       <div class="col-md-4">
         <div class="form-group form-custom">
           <label>Time Period</label>
-          <select class="form-control" id="pre_post">
+          <select class="form-control" id="timePeriod">
             <option value="">- - - -</option>
             <option value="Pre-1965">Pre-1965</option>
             <option value="Post-1965">Post-1965</option>
@@ -108,6 +110,13 @@
     <button id="search" class="btn btn-lg btn-success">Find the Music</button>
   </div>
 
+  <div class="jumbotron jumbotron-custom">
+    <h1>View results<h1>
+    <ul class="results">
+    </ul>
+      
+  </div>
+  
 
 {% endblock %}
 
