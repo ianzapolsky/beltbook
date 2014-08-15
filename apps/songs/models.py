@@ -31,9 +31,12 @@ class Song(models.Model):
     PRE_POST_CHOICES = (('Pre-1965', 'Pre-1965'),
                         ('Post-1965', 'Post-1965'))
 
+    PRE_POST_CHOICES = (('Male', 'Male'),
+                        ('Female', 'Female'))
+
     title           = models.CharField(max_length=100)
     show            = models.CharField(max_length=100)
-    gender          = models.CharField(max_length=100, choices=GENDER_CHOICES)
+    gender          = MultiSelectField(choices=GENDER_CHOICES)
     composer        = models.CharField(max_length=100)
     year            = models.IntegerField()
     pre_post        = models.CharField(max_length=100, choices=PRE_POST_CHOICES)

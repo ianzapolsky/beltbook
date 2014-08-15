@@ -4,6 +4,7 @@
 
 .jumbotron-custom {
   padding-left: 40px;
+  border-radius: 0px !important;
   text-align: center;
   background-color: #ffffff;
   h1,h2,h3,h4,h5,h6 {
@@ -21,7 +22,6 @@
     background-color: #eee;
     padding: 30px 30px 25px 30px;
     border: 1px solid #ddd;
-    border-radius: 2px;
     outline: none;
     -webkit-transition: all 500ms;
     &:active {
