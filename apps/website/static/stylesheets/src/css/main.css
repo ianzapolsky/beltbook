@@ -1,88 +1,252 @@
-/*
-Syntax error: Invalid CSS after "  font-size": expected ";", was ": 30px;"
-        on line 4 of /Users/ianzapolsky/side-projects/beltbook/apps/website/static/stylesheets/src/scss/_form.scss
-        from line 2 of /Users/ianzapolsky/side-projects/beltbook/apps/website/static/stylesheets/src/scss/main.scss
+/**
+ * SCSS mixins - Ian Zapolsky
+ */
+@import url(http://fonts.googleapis.com/css?family=Lusitana|Raleway);
+/* line 1, ../scss/_spacer.scss */
+.spacer100 {
+  min-height: 100px;
+}
 
-1: /Users/ianzapolsky/side-projects/beltbook/apps/website/static/stylesheets/src/scss/main.scss
+/* line 5, ../scss/_spacer.scss */
+.spacer50 {
+  min-height: 50px;
+}
 
-Backtrace:
-/Users/ianzapolsky/side-projects/beltbook/apps/website/static/stylesheets/src/scss/_form.scss:4
-/Users/ianzapolsky/side-projects/beltbook/apps/website/static/stylesheets/src/scss/main.scss:2
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/scss/parser.rb:1147:in `expected'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/scss/parser.rb:1085:in `expected'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/scss/parser.rb:1080:in `tok!'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/scss/parser.rb:586:in `block in declaration_or_ruleset'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/scss/parser.rb:1123:in `call'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/scss/parser.rb:1123:in `rethrow'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/scss/parser.rb:592:in `declaration_or_ruleset'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/scss/parser.rb:554:in `block_child'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/scss/parser.rb:546:in `block_contents'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/scss/parser.rb:535:in `block'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/scss/parser.rb:529:in `ruleset'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/scss/parser.rb:553:in `block_child'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/scss/parser.rb:543:in `block_contents'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/scss/parser.rb:82:in `stylesheet'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/scss/parser.rb:27:in `parse'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/engine.rb:342:in `_to_tree'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/engine.rb:274:in `to_tree'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:225:in `visit_import'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/compass-0.12.6/lib/compass/compiler.rb:139:in `block (2 levels) in compile'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/compass-0.12.6/lib/compass/compiler.rb:138:in `block in compile'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/compass-0.12.6/lib/compass/logger.rb:45:in `red'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/compass-0.12.6/lib/compass/compiler.rb:137:in `compile'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/compass-0.12.6/lib/compass/compiler.rb:118:in `compile_if_required'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/compass-0.12.6/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `each'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `block in run'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/compass-0.12.6/lib/compass/compiler.rb:100:in `run'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:147:in `recompile'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:87:in `perform'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/compass-0.12.6/lib/compass/commands/base.rb:18:in `execute'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/compass-0.12.6/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/compass-0.12.6/bin/compass:30:in `block in <top (required)>'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/compass-0.12.6/bin/compass:44:in `call'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1@global/gems/compass-0.12.6/bin/compass:44:in `<top (required)>'
-/Users/ianzapolsky/.rvm/rubies/ruby-2.1.1/bin/compass:23:in `load'
-/Users/ianzapolsky/.rvm/rubies/ruby-2.1.1/bin/compass:23:in `<main>'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
-/Users/ianzapolsky/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"  font-size\": expected \";\", was \": 30px;\"\A         on line 4 of /Users/ianzapolsky/side-projects/beltbook/apps/website/static/stylesheets/src/scss/_form.scss\A         from line 2 of /Users/ianzapolsky/side-projects/beltbook/apps/website/static/stylesheets/src/scss/main.scss\A \A 1: /Users/ianzapolsky/side-projects/beltbook/apps/website/static/stylesheets/src/scss/main.scss"; }
+/* line 1, ../scss/_form.scss */
+.form-custom {
+  font-family: "Raleway", sans-serif;
+  display: inline-block;
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  -webkit-transition: 500ms all ;
+  -moz-transition: 500ms all ;
+  -ms-transition: 500ms all ;
+  transition: 500ms all ;
+}
+/* line 10, ../scss/_form.scss */
+.form-custom h1 {
+  font-size: 30px !important;
+  color: #000 !important;
+  padding-bottom: 5px;
+  border-bottom: 5px solid #800000;
+}
+/* line 17, ../scss/_form.scss */
+.form-custom input[type="radio"] {
+  display: none;
+}
+/* line 20, ../scss/_form.scss */
+.form-custom input[type="radio"] + label span {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  -webkit-transition: 300ms all ;
+  -moz-transition: 300ms all ;
+  -ms-transition: 300ms all ;
+  transition: 300ms all ;
+}
+/* line 31, ../scss/_form.scss */
+.form-custom input[type="radio"] + label span:hover {
+  background-color: #eee;
+}
+/* line 34, ../scss/_form.scss */
+.form-custom input[type="radio"]:checked + label span {
+  background-color: #800000;
+}
+
+/**
+ * Custom styles for the belt book containers
+ */
+/* line 6, ../scss/_container.scss */
+.container-custom h1, .container-custom h2, .container-custom h3, .container-custom h4, .container-custom h5, .container-custom h6 {
+  text-align: center;
+  font-family: "Lusitana", serif;
+  color: #800000;
+}
+/* line 11, ../scss/_container.scss */
+.container-custom h1 {
+  font-size: 40px;
+}
+/* line 14, ../scss/_container.scss */
+.container-custom h2 {
+  font-size: 30px;
+}
+/* line 17, ../scss/_container.scss */
+.container-custom p {
+  font-family: "Lusitana", serif;
+  font-size: 18px;
+}
+
+/**
+ * Custom styles for the belt book containers
+ */
+/* line 5, ../scss/_jumbotron.scss */
+.jumbotron-custom {
+  padding-left: 40px;
+  border-radius: 0px !important;
+  text-align: center;
+  background-color: #eeeeee;
+}
+/* line 10, ../scss/_jumbotron.scss */
+.jumbotron-custom h1, .jumbotron-custom h2, .jumbotron-custom h3, .jumbotron-custom h4, .jumbotron-custom h5, .jumbotron-custom h6 {
+  font-family: "Lusitana", serif;
+}
+/* line 13, ../scss/_jumbotron.scss */
+.jumbotron-custom h1 {
+  color: #000;
+  font-size: 45px;
+  display: inline;
+}
+/* line 18, ../scss/_jumbotron.scss */
+.jumbotron-custom h1.adjectives {
+  color: #fff;
+}
+/* line 21, ../scss/_jumbotron.scss */
+.jumbotron-custom a {
+  color: #fff;
+}
+/* line 24, ../scss/_jumbotron.scss */
+.jumbotron-custom .jumbo-button {
+  display: inline;
+  background-color: #eee;
+  padding: 30px 30px 25px 30px;
+  border: 1px solid #ddd;
+  outline: none;
+  -webkit-transition: all 500ms;
+}
+/* line 34, ../scss/_jumbotron.scss */
+.jumbotron-custom .jumbo-button h1 {
+  font-size: 45px;
+}
+@media all and (max-width: 600px) {
+  /* line 34, ../scss/_jumbotron.scss */
+  .jumbotron-custom .jumbo-button h1 {
+    font-size: 30px;
+  }
+}
+@media all and (max-width: 450px) {
+  /* line 34, ../scss/_jumbotron.scss */
+  .jumbotron-custom .jumbo-button h1 {
+    font-size: 25px;
+  }
+}
+
+/* line 46, ../scss/_jumbotron.scss */
+.jumbotron-header {
+  background-color: rgba(128, 0, 0, 0.75);
+}
+
+/**
+ * Custom styles for the belt book nav bar
+ */
+/* line 5, ../scss/_navbar.scss */
+.navbar-custom {
+  background-color: #ffffff;
+  border: 0px solid #ffffff;
+  margin: 40px;
+  border-bottom: 5px solid #800000;
+}
+@media all and (max-width: 450px) {
+  /* line 5, ../scss/_navbar.scss */
+  .navbar-custom {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+/* line 16, ../scss/_navbar.scss */
+.navbar-custom a {
+  color: #000;
+  text-decoration: none;
+}
+/* line 19, ../scss/_navbar.scss */
+.navbar-custom a:hover {
+  color: #800000;
+}
+/* line 24, ../scss/_navbar.scss */
+.navbar-custom .navbar-brand {
+  font-family: "Lusitana", serif;
+  font-size: 40px;
+}
+@media all and (max-width: 350px) {
+  /* line 24, ../scss/_navbar.scss */
+  .navbar-custom .navbar-brand {
+    font-size: 35px;
+  }
+}
+/* line 32, ../scss/_navbar.scss */
+.navbar-custom .navbar-nav {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+}
+/* line 37, ../scss/_navbar.scss */
+.navbar-custom .navbar-toggle {
+  background-color: #ddd;
+}
+
+/* line 1, ../scss/_module.scss */
+.module {
+  -webkit-transition: 300ms all ;
+  -moz-transition: 300ms all ;
+  -ms-transition: 300ms all ;
+  transition: 300ms all ;
+  border-bottom: 5px solid #ffffff;
+}
+/* line 6, ../scss/_module.scss */
+.module h2 {
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  -webkit-transition: 300ms all ;
+  -moz-transition: 300ms all ;
+  -ms-transition: 300ms all ;
+  transition: 300ms all ;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  transform: translateY(100px);
+}
+/* line 12, ../scss/_module.scss */
+.module p {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 200ms all ;
+  -moz-transition: 200ms all ;
+  -ms-transition: 200ms all ;
+  transition: 200ms all ;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  transform: translateY(100px);
+}
+/* line 19, ../scss/_module.scss */
+.module:hover {
+  border-bottom: 5px solid #800000;
+}
+/* line 23, ../scss/_module.scss */
+.module:hover h2 {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  transform: translateY(-50px);
+}
+/* line 28, ../scss/_module.scss */
+.module:hover p {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+
+/* line 2, ../scss/_table.scss */
+.table-custom td {
+  max-width: 100px;
+  font-size: 18px;
+}

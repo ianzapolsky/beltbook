@@ -3,3 +3,4 @@ Unipath==1.0
 django-multiselectfield==0.1.2
 jsonpickle==0.7.1
 wsgiref==0.1.2
+xlrd==0.9.3

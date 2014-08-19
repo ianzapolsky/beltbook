@@ -1,0 +1,17 @@
+/**
+ * SCSS mixins - Ian Zapolsky
+ */
+
+@mixin crossbrowser-transition($transition-length, $transition-style:"") {
+  -webkit-transition: $transition-length all unquote($transition-style);
+  -moz-transition: $transition-length all unquote($transition-style);
+  -ms-transition: $transition-length all unquote($transition-style);
+  transition: $transition-length all unquote($transition-style);
+}
+
+@mixin crossbrowser-translateY($translate-value) {
+  -webkit-transform: translateY($translate-value);
+  -moz-transform: translateY($translate-value);
+  -ms-transform: translateY($translate-value);
+  transform: translateY($translate-value);
+}

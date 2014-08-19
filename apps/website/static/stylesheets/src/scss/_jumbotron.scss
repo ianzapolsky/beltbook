@@ -6,13 +6,17 @@
   padding-left: 40px;
   border-radius: 0px !important;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #eeeeee;
   h1,h2,h3,h4,h5,h6 {
     font-family: $serifFont;
   }
   h1 {
     color: #000;
     font-size: 45px;
+    display: inline;
+  }
+  h1.adjectives {
+    color: #fff;
   }
   a {
     color: #fff;
@@ -39,6 +43,6 @@
   }
 }
 
-.header .jumbotron-custom {
+.jumbotron-header {
   background-color: rgba(128,0,0,0.75);
 }

@@ -1,0 +1,35 @@
+.module {
+
+  @include crossbrowser-transition(300ms);
+  border-bottom: 5px solid #ffffff;
+  
+  h2 {
+    color: #000;
+    font-family: $sansSerifFont;
+    @include crossbrowser-transition(300ms);
+    @include crossbrowser-translateY(100px);
+  }
+  p {
+    opacity: 0;
+    visibility: hidden;
+    @include crossbrowser-transition(200ms);
+    @include crossbrowser-translateY(100px);
+  }
+
+  &:hover {
+
+    border-bottom: 5px solid #800000;
+  
+    h2 {
+      opacity: 0;
+      visibility: hidden;
+      @include crossbrowser-translateY(-50px);
+    }
+    p {
+      opacity: 1;
+      visibility: visible;
+      @include crossbrowser-translateY(-20px);
+    }
+  }
+      
+}
