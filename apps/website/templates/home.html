@@ -4,114 +4,53 @@
 {% block page_title %}The Belt Book{% endblock %}
 {% block page_specific_styles %}{% endblock %}
 {% block page_specific_scripts %}
-  <script src="{% static 'javascripts/src/search.js' %}"></script>
+  <script src="{% static 'javascripts/src/display.js' %}"></script>
 {% endblock %}
 
 {% block page_content %}
 
-  <div class="container container-custom header">
-    <div class="jumbotron jumbotron-custom">
-      <h1>Welcome to the Belt Book</h1>
-      <p>a free resource for teachers and students to find the musical theater repertoire that's right for them</p>
-      <p><a href="/about">learn more &#8594;</a></p>
+  <!-- Marketing Header -->
+  <div class="jumbotron jumbotron-custom jumbotron-header">
+    <h1>The Belt Book is</h1>
+    <h1 id="marketing-cycle" class="highlight">valuable</h1>
+  </div>
+
+  <!-- Marketing Copy -->
+  <div class="container container-custom">
+
+    <div class="col-md-4 module">
+      <div class="module-svg">
+        <img class="custom-svg" src="{% static 'images/svg/happy6.svg' %}"> 
+      </div>
+      <h2>easy</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <div class="module-fadeout"></div>
+    </div>
+    <div class="col-md-4 module">
+      <div class="module-svg">
+        <img class="custom-svg" src="{% static 'images/svg/runner5.svg' %}">
+      </div>
+      <h2>fast</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <div class="module-fadeout"></div>
+    </div>
+    <div class="col-md-4 module">
+      <div class="module-svg">
+        <img class="custom-svg" src="{% static 'images/svg/help.svg' %}">
+      </div>
+      <h2>helpful</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <div class="module-fadeout"></div>
     </div>
   </div>
 
-  <div class="jumbotron jumbotron-custom">
-    <h1> Select attributes to search by...</h1>
-  </div>
+  <div class="spacer50"></div>
 
-  <div class="container container-custom">
-
-    <div class="row row-custom">
-
-      <div class="col-md-4">
-        <div class="form-custom">
-          <label>Tempo</label>
-          <form>
-            <input type="radio" name="Ballad" value="Ballad">Ballad<br>
-            <input type="radio" name="Power Ballad" value="Power Ballad">Power Ballad<br>
-            <input type="radio" name="Mid-Tempo" value="Mid-Tempo">Mid-Tempo<br>
-            <input type="radio" name="Up-Tempo" value="Up-Tempo">Up-Tempo
-          </form>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="form-group form-custom">
-          <label>Tessitura</label>
-          <select class="form-control" id="tessitura">
-            <option value="">- - - -</option>
-            <option value="low">Low</option>
-            <option value="middle">Middle</option>
-            <option value="high">High</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="form-group form-custom">
-          <label>Song Style</label>
-          <select class="form-control" id="songStyle">
-            <option value="">- - - -</option>
-            <option value="Belt">Belt</option>
-            <option value="Belt Mix">Belt Mix</option>
-          </select>
-        </div>
-      </div>
-
-    </div><!-- end row 1 -->
-
-    <div class="row row-custom">
-
-      <div class="col-md-4">
-        <div class="form-group form-custom">
-          <label>Gender</label>
-          <select class="form-control" id="gender">
-            <option value="">- - - -</option>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-custom">
-        <div class="form-group form-custom">
-          <label>Character Type</label>
-          <select class="form-control" id="characterType">
-            <option value="">- - - -</option>
-            <option value="Youth">Youth</option>
-            <option value="Ingenue">Ingenue</option>
-            <option value="Young Lead">Young Lead</option>
-            <option value="Comic">Comic</option>
-            <option value="Lead">Lead</option>
-            <option value="2nd Banana">2nd Banana</option>
-            <option value="Character">Character</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="form-group form-custom">
-          <label>Time Period</label>
-          <select class="form-control" id="timePeriod">
-            <option value="">- - - -</option>
-            <option value="Pre-1965">Pre-1965</option>
-            <option value="Post-1965">Post-1965</option>
-          </select>
-        </div>
-      </div>
-
-    </div><!-- end row 2 -->
-
-  <div class="jumbotron jumbotron-custom">
-    <button id="search" class="btn btn-lg btn-success">Find the Music</button>
-  </div>
-
-  <div class="container container-custom">
-    <p id="length"></p>
-    <table id="results" class="table table-hover table-custom">
-    </table>
+  <!-- Testimonial Header -->
+  <div class="jumbotron jumbotron-custom jumbotron-header">
+    <h1>People are </h1>
+    <h1 id="testimonial-cycle" class="highlight">singing</h1>
+    <h1> the Belt Book's praises
   </div>
 
 {% endblock %}

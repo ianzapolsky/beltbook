@@ -11,13 +11,15 @@
       this.initializeElements();
       this.initializeTooltips();
       this.startMarketingCycle();
+      this.startTestimonialCycle();
     },
 
     /**
      * Cache DOM elements
      */
     initializeElements: function() {
-      this.$adjectives = $('#adjectives');
+      this.$marketingCycle = $('#marketing-cycle');
+      this.$testimonialCycle = $('#testimonial-cycle');
     },
 
     /**
@@ -28,19 +30,37 @@
     },
 
     /**
-     * Swap out adjectives every 2 seconds
+     * Swap out marketing adjectives every 2 seconds
      */
     startMarketingCycle: function() {
-      this.adjectives = ['fun', 'awesome', 'big', 'deep', 'powerful', 'revolutionary', 'musical'];
+      var words = ['fun', 'big', 'deep', 'powerful', 'musical', 'valuable', 'awesome'];
       var index = 0;
-      var adjectiveTimer = setInterval(function() {
-        this.$adjectives.animate({opacity: 0}, 200, function() {
-          this.$adjectives.text(this.adjectives[index]);
+      var timer = setInterval(function() {
+        this.$marketingCycle.animate({opacity: 0}, 200, function() {
+          this.$marketingCycle.text(words[index]);
           index += 1;
-          if (index === this.adjectives.length) {
-            index = 0;
+          if (index === words.length) {
+            clearInterval(timer);
           }
-          this.$adjectives.animate({opacity: 1}, 200);
+          this.$marketingCycle.animate({opacity: 1}, 200);
+        }.bind(this));
+      }.bind(this), 2000);
+    },
+
+    /**
+     * Swap out testimonial verbs every 2 seconds
+     */
+    startTestimonialCycle: function() {
+      var words = ['belting', 'crooning', 'crying', 'cooing', 'singing'];
+      var index = 0;
+      var timer = setInterval(function() {
+        this.$testimonialCycle.animate({opacity: 0}, 200, function() {
+          this.$testimonialCycle.text(words[index]);
+          index += 1;
+          if (index === words.length) {
+            clearInterval(timer);
+          }
+          this.$testimonialCycle.animate({opacity: 1}, 200);
         }.bind(this));
       }.bind(this), 2000);
     }
