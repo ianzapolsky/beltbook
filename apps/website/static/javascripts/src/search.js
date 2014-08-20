@@ -48,7 +48,7 @@
      * Bind the search button
      */
     bindEvents: function() {
-      this.$button.on('click', $.proxy(this.handleSearch, this));
+      this.$button.on('click', this.handleSearch.bind(this));
     },
 
     /**
@@ -70,12 +70,12 @@
      * Scrape search form
      */
     scrapeForm: function() {
-      this.tempo = this.$tempo.val() === '- - - -' ? null : this.$tempo.val();
-      this.tessitura = this.$tessitura.val() === '- - - -' ? null : this.$tessitura.val();
-      this.songStyle = this.$songStyle.val() === '- - - -' ? null : this.$songStyle.val();
-      this.gender = this.$gender.val() === '- - - -' ? null : this.$gender.val();
-      this.characterType = this.$characterType.val() === '- - - -' ? null : this.$characterType.val();
-      this.timePeriod = this.$timePeriod.val() === '- - - -' ? null : this.$timePeriod.val();
+      this.tempo         = $('input:checked', this.$tempo).val();
+      this.tessitura     = $('input:checked', this.$tessitura).val();
+      this.songStyle     = $('input:checked', this.$songStyle).val();
+      this.gender        = $('input:checked', this.$gender).val();
+      this.characterType = $('input:checked', this.$characterType).val();
+      this.timePeriod    = $('input:checked', this.$timePeriod).val();
     },
 
     /**
