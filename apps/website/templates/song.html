@@ -5,127 +5,24 @@
 {% block page_specific_styles %}{% endblock %}
 {% block page_specific_scripts %}{% endblock %}
 
-{% block navigation %} 
+{% block page_content %} 
   
-  <div class="nav">
-    <div class="nav-bar">
-      <div class="nav-bar-segment-left active">
-        <h1><a href="/">The Belt Book</a></h1>
-      </div>
-      <div class="nav-bar-segment-right">
-        <h3><a href="">blog</a></h3>
-      </div>
-      <div class="nav-bar-segment-right">
-        <h3><a href="/contact">contact</a></h3>
-      </div>
-      <div class="nav-bar-segment-right">
-        <h3><a href="/about">about</a></h3>
-      </div>
-      <div class="nav-bar-collapse-button"></div>
-    </div>
-  </div>
-
-  <div class="collapse-menu">
-    <div class="collapse-row">
-      <div class="collapse-row-item">
-        <h3><a href="/about">about</a></h3>
-      </div>
-    </div>
-    <div class="collapse-row">
-      <div class="collapse-row-item">
-        <h3><a href="/contact">contact</a></h3>
-      </div>
-    </div>
-    <div class="collapse-row">
-      <div class="collapse-row-item">
-        <h3><a href="">blog</a></h3>
-      </div>
-    </div>
-  </div>
-
-{% endblock %}
-
-{% block page_content %}
-
-  <div class="container">
-    <div class="container-inner">
-
-      <div class="container-card">
-        <!-- card -->
-        <div class="flipper" ontouchstart="this.classList.toggle('flipped');">
-
-          <!-- front content -->
-          <div class="front">
-            <div class="content">
-            <table>
-              <tr>
-                <td class="alignRight"><h3 class="header">title:</h3></td>
-                <td><h3 class="header">{{song.title}}</h3></td>
-              </tr>
-              <tr>
-                <td class="alignRight"><h3 class="header">year:</h3></td>
-                <td><h3 class="header">{{song.year}}</h3></td>
-              </tr>
-              <tr>
-                <td class="alignRight"><h3 class="header">show:</h3></td>
-                <td><h3 class="header">{{song.show}}</h3></td>
-              </tr>
-              <tr>
-                <td class="alignRight"><h3 class="header">name in show:</h3></td>
-                <td><h3 class="header">{{song.name_in_show}}</h3></td>
-              </tr>
-              <tr>
-                <td class="alignRight"><h3 class="header">original artist:</h3></td>
-                <td><h3 class="header">{{song.original_artist}}</h3></td>
-              </tr>
-              <tr>
-                <td class="alignRight"><h3 class="header">low note:</h3></td>
-                <td><h3 class="header">{{song.low_note}}</h3></td>
-              </tr>
-              <tr>
-                <td class="alignRight"><h3 class="header">high note:</h3></td>
-                <td><h3 class="header">{{song.high_note}}</h3></td>
-              </tr>
-              <tr>
-                <td class="alignRight"><h3 class="header">song style:</h3></td>
-                <td><h3 class="header">{{song.song_style}}</h3></td>
-               <tr>
-                <td class="alignRight"><h3 class="header">tempo:</h3></td>
-                <td><h3 class="header">{{song.tempo}}</h3></td>
-              </tr>
-              <tr>
-                <td class="alignRight"><h3 class="header">tessitura:</h3></td>
-                <td><h3 class="header">{{song.tessitura}}</h3></td>
-              </tr>
-              <tr>
-                <td class="alignRight"><h3 class="header">character type:</h3></td>
-                <td>
-                  <h3 class="header">
-                    {% for type in song.character_type %}
-                      {{type}},
-                    {% endfor %}
-                  </h3>
-                </td>
-              </tr>
-            </table>
-            </div>
-            <div class="button-flip"></div>
-          </div>
-
-          <!-- back content -->
-          <div class="back">
-            <div class="content">
-              <h1 class="header">
-                Tips on the back
-              </h1>
-            </div>
-            <div class="button-flip"></div>
-          </div>
-
-        </div>
-      </div>
-      
-    </div>
+  <div class="container custom">
+    <p>{{song.title}}</p>
+    <p>{{song.year}}</p>
+    <p>{{song.show}}</p>
+    <p>{{song.name_in_show}}</p>
+    <p>{{song.original_artist}}</p>
+    <p>{{song.low_note}}</p>
+    <p>{{song.high_note}}</p>
+    <p>{{song.song_style}}</p>
+    <p>{{song.tempo}}</p>
+    <p>{{song.tessitura}}</p>
+    <p>
+      {% for type in song.character_type %}
+        {{type}},
+      {% endfor %}
+    </p>
   </div>
 
 {% endblock %}

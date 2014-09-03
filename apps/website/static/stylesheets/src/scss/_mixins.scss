@@ -15,3 +15,10 @@
   -ms-transform: translateY($translate-value);
   transform: translateY($translate-value);
 }
+
+@mixin crossbrowser-background-size($value) {
+  -webkit-background-size: $value;
+  -moz-background-size: $value;
+  -ms-background-size: $value;
+  background-size: $value;
+}

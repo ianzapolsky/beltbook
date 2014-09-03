@@ -98,7 +98,7 @@
 }
 /* line 13, ../scss/_jumbotron.scss */
 .jumbotron-custom h1 {
-  color: #000;
+  color: #b4b4b4;
   font-size: 45px;
   display: inline;
 }
@@ -110,35 +110,10 @@
 .jumbotron-custom a {
   color: #fff;
 }
-/* line 24, ../scss/_jumbotron.scss */
-.jumbotron-custom .jumbo-button {
-  display: inline;
-  background-color: #eee;
-  padding: 30px 30px 25px 30px;
-  border: 1px solid #ddd;
-  outline: none;
-  -webkit-transition: all 500ms;
-}
-/* line 34, ../scss/_jumbotron.scss */
-.jumbotron-custom .jumbo-button h1 {
-  font-size: 45px;
-}
-@media all and (max-width: 600px) {
-  /* line 34, ../scss/_jumbotron.scss */
-  .jumbotron-custom .jumbo-button h1 {
-    font-size: 30px;
-  }
-}
-@media all and (max-width: 450px) {
-  /* line 34, ../scss/_jumbotron.scss */
-  .jumbotron-custom .jumbo-button h1 {
-    font-size: 25px;
-  }
-}
 
-/* line 46, ../scss/_jumbotron.scss */
+/* line 26, ../scss/_jumbotron.scss */
 .jumbotron-header {
-  background-color: rgba(128, 0, 0, 0.75);
+  background-color: #960000;
 }
 
 /**
@@ -188,6 +163,16 @@
   background-color: #ddd;
 }
 
+/* line 1, ../scss/_footer.scss */
+.footer {
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 5, ../scss/_footer.scss */
+.footer h1 {
+  color: #800000;
+}
+
 /* line 1, ../scss/_module.scss */
 .module {
   -webkit-transition: 300ms all ;
@@ -222,7 +207,7 @@
   transform: translateY(100px);
 }
 /* line 17, ../scss/_module.scss */
-.module .module-svg {
+.module .module-img {
   position: absolute;
   width: 120px;
   height: 120px;
@@ -258,7 +243,7 @@
   display: none;
 }
 /* line 41, ../scss/_module.scss */
-.module:hover .module-svg {
+.module:hover .module-img {
   -webkit-transform: translateY(-20px);
   -moz-transform: translateY(-20px);
   -ms-transform: translateY(-20px);
@@ -277,14 +262,78 @@
 
 /* line 59, ../scss/_module.scss */
 .custom-svg {
-  margin-left: 20px;
-  margin-top: 10px;
-  width: 80px;
-  height: 80px;
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 60px;
+  height: 60px;
+}
+
+/* line 2, ../scss/_carousel.scss */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+/* line 7, ../scss/_carousel.scss */
+.carousel-caption {
+  z-index: 10;
+}
+/* line 9, ../scss/_carousel.scss */
+.carousel-caption h1 {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Declare heights because of positioning of img element */
+/* line 15, ../scss/_carousel.scss */
+.carousel .item {
+  height: 500px;
+  background-color: #fff;
+}
+
+/* line 20, ../scss/_carousel.scss */
+.carousel-inner > .item > img.fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 500px;
+}
+
+/* line 28, ../scss/_carousel.scss */
+.carousel-indicators > li {
+  background-color: #eee;
+  border: 1px solid #000;
+}
+
+/* line 32, ../scss/_carousel.scss */
+.carousel-indicators > li.active {
+  background-color: #800000;
+  border: 1px solid #000;
 }
 
 /* line 2, ../scss/_table.scss */
 .table-custom td {
   max-width: 100px;
   font-size: 18px;
+}
+
+/* line 3, ../scss/_testimonial.scss */
+.testimonial h4 {
+  color: #800000;
+  padding-top: 10px;
+  font-family: "Raleway", sans-serif;
+}
+/* line 8, ../scss/_testimonial.scss */
+.testimonial .testimonial-img {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* line 15, ../scss/_testimonial.scss */
+.custom-jpg {
+  box-shadow: 0 0 15px #000;
+  border-radius: 33%;
+  margin-top: 20px;
+  height: 140px;
 }

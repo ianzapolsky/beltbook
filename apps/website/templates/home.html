@@ -9,39 +9,79 @@
 
 {% block page_content %}
 
-  <!-- Marketing Header -->
-  <div class="jumbotron jumbotron-custom jumbotron-header">
-    <h1>The Belt Book is</h1>
-    <h1 id="marketing-cycle" class="highlight">valuable</h1>
-  </div>
+  <!-- Carousel -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Items -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img class="fill" src="{% static 'images/hike1.jpg' %}">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Example headline.</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img class="fill" src="{% static 'images/lake.jpg' %}">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img class="fill" src="{% static 'images/mountains.jpg' %}">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>One more for good measure.</h1>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /.carousel -->
 
-  <!-- Marketing Copy -->
+  <!-- Marketing Modules -->
   <div class="container container-custom">
 
     <div class="col-md-4 module">
-      <div class="module-svg">
+      <div class="module-img">
         <img class="custom-svg" src="{% static 'images/svg/happy6.svg' %}"> 
       </div>
       <h2>easy</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
       <div class="module-fadeout"></div>
     </div>
+
     <div class="col-md-4 module">
-      <div class="module-svg">
+      <div class="module-img">
         <img class="custom-svg" src="{% static 'images/svg/runner5.svg' %}">
       </div>
       <h2>fast</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
       <div class="module-fadeout"></div>
     </div>
+
     <div class="col-md-4 module">
-      <div class="module-svg">
+      <div class="module-img">
         <img class="custom-svg" src="{% static 'images/svg/help.svg' %}">
       </div>
       <h2>helpful</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
       <div class="module-fadeout"></div>
     </div>
+
   </div>
 
   <div class="spacer50"></div>
@@ -52,6 +92,37 @@
     <h1 id="testimonial-cycle" class="highlight">singing</h1>
     <h1> the Belt Book's praises
   </div>
+
+  <!-- Testimonial Modules -->
+  <div class="container container-custom">
+
+    <div class="col-md-4 testimonial">
+      <div class="testimonial-img">
+        <img class="custom-jpg" src="{% static 'images/colin_hartman.jpg' %}"> 
+      </div>
+      <h4>Colin Hartman</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+  
+    <div class="col-md-4 testimonial">
+      <div class="testimonial-img">
+        <img class="custom-jpg" src="{% static 'images/katie_tomlinson.jpg' %}"> 
+      </div>
+      <h4>Katie Tomlinson</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+
+    <div class="col-md-4 testimonial">
+      <div class="testimonial-img">
+        <img class="custom-jpg" src="{% static 'images/vicki_noon.jpg' %}"> 
+      </div>
+      <h4>Vicki Noon</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+  
+  </div>
+
+  <div class="spacer100"></div>
 
 {% endblock %}
 

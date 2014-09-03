@@ -11,7 +11,7 @@
     font-family: $serifFont;
   }
   h1 {
-    color: #000;
+    color: rgb(180,180,180);
     font-size: 45px;
     display: inline;
   }
@@ -21,28 +21,9 @@
   a {
     color: #fff;
   }
-  .jumbo-button {
-    display: inline;
-    background-color: #eee;
-    padding: 30px 30px 25px 30px;
-    border: 1px solid #ddd;
-    outline: none;
-    -webkit-transition: all 500ms;
-    &:active {
-     
-    }
-    h1 {
-      font-size: 45px;
-      @media all and (max-width: 600px) {
-        font-size: 30px;
-      }
-      @media all and (max-width: 450px) {
-        font-size: 25px;
-      }
-    }
-  }
 }
 
 .jumbotron-header {
-  background-color: rgba(128,0,0,0.75);
+  background-color: rgb(150,0,0);
 }
+

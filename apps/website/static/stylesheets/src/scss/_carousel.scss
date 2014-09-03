@@ -1,0 +1,37 @@
+
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  h1 {
+    font-family: $sansSerifFont;
+  }
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #fff;
+}
+
+.carousel-inner > .item > img.fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 500px;
+}
+
+.carousel-indicators > li {
+  background-color: #eee;
+  border: 1px solid #000;
+}
+.carousel-indicators > li.active {
+  background-color: #800000;
+  border: 1px solid #000;
+}
+
+
