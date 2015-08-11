@@ -3,7 +3,6 @@ import sys
 
 from unipath import Path
 
-
 #
 # Set project root
 #
